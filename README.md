@@ -1,6 +1,7 @@
 # InstaKod
 
 Bad language from school, recreated to look like Assembly!!! :D
+[Ahmed-approved!](https://ermitavulpe.github.io/ask-ahmed) (Ahmed is made by my brother)
 
 # Installation
 
@@ -19,7 +20,7 @@ This language can be pretty complex, so I've added [a folder with examples!](htt
 
 # IMPORTANT NOTES
 
-There are only 4 variables, labeled A, B, C and D. They can only store integers. They usually can't store negative numbers the only way to do so is to use subtraction.
+There are only 4 variables, labeled A, B, C and D. They can only store integers. They usually can't store negative numbers, the only way to do so is to use subtraction.
 A comparison is:
 - < / LT (less than)
 - <= / LE (less than or equal to)
