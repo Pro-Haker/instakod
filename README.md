@@ -21,12 +21,12 @@ This language can be pretty complex, so I've added [a folder with examples!](htt
 
 There are only 4 variables, labeled A, B, C and D. They can only store integers. They usually can't store negative numbers the only way to do so is to use subtraction.
 A comparison is:
-- < (less than)
-- <= (less than or equal to)
-- = (equal to)
-- != (not equal to)
-- \> (greater than)
-- \>= (greater than or equal to).
+- < / LT (less than)
+- <= / LE (less than or equal to)
+- = / EQ (equal to)
+- != / NE (not equal to)
+- \> / GT (greater than)
+- \>= / GE (greater than or equal to).
 
 A jump destination is:
 - NXT/NEXT (Jumps to the next instruction)
@@ -77,21 +77,21 @@ SUB A 5
 ```
 Will decrease A by 5.
 
-`IFJ <variable> <comparison> <variable or number> <jump destination> <jump destination>` - Compares \<variable> with \<variable or number> using \<comparison>. If the statement is true, jump to the first \<jump destination>, otherwise, jump to the second one. Examples:
+`IF/IFJ <variable> <comparison> <variable or number> <jump destination> <jump destination>` - Compares \<variable> with \<variable or number> using \<comparison>. If the statement is true, jump to the first \<jump destination>, otherwise, jump to the second one. Examples:
 ```instakod
-IFJ A = 0 NEXT END
+IF A EQ 0 NEXT END
 ```
 Will jump to the next line if A is equal to 0, otherwise, ends execution of the program.
 ```instakod
-IFJ C >= B 13 2
+IFJ C >= B NXT 2
 ```
-Will jump to line 13 if C is greater than or equal to B, otherwise, jumps to line 2.
+Will jump to the next line if C is greater than or equal to B, otherwise, jumps to line 2.
 
 `JMP <jump destination>` - Jumps to the specified jump destination. Example:
 ```instakod
-JMP END
+JMP 13
 ```
-Will end execution of the program.
+Will jump to line 13.
 
 # License
 

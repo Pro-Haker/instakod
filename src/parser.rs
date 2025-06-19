@@ -88,7 +88,7 @@ impl FromStr for Command {
                 let var_or_num = var_or_num.parse::<VarOrNum>()?;
                 Ok(Command::Sub(variable, var_or_num))
             }
-            "IFJ" => {
+            "IFJ" | "IF" => {
                 let mut split = rest.rsplitn(3, ' ');
                 let else_ = split
                     .next()
