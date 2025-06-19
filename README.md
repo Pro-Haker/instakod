@@ -1,6 +1,7 @@
 # InstaKod
 
 Bad language from school, recreated to look like Assembly!!! :D
+[Ahmed-approved!](https://ermitavulpe.github.io/ask-ahmed) (made by my brother)
 
 # Installation
 
