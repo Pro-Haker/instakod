@@ -1,0 +1,7 @@
+PTX "How many times to run? "
+LTV A               # Loads the answer into A
+IFJ A > 0 NXT END   # The actual loop
+PVR A
+SUB A 1             # Changes the iterator (A is the iterator)
+NLN
+JMP 3               # Jumps back to the IFJ

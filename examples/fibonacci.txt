@@ -1,0 +1,14 @@
+PTX "Which Fibonacci number do you want? "
+LTV A            # Loads the answer
+SET B 1
+SET C 1
+SET D 1
+IFJ A > 2 NXT 13 # It has to be A > 2 and not 0 because the first two are already in B and C
+SET D B          # Set, not add, make sure to overwrite (actual calculation)
+ADD D C          # Actual calculation
+SET B C          # Reset it so it works on the next iteration
+SET C D          # Reset it so it works on the next iteration
+SUB A 1
+JMP 6            # Loop back
+PTX "It's "
+PVR D

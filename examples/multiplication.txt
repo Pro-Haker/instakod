@@ -1,0 +1,14 @@
+PTX "A = "
+LTV A               # Loads the first product
+PTX "B = "
+LTV B               # Loads the second product
+SET D B             # Copies it over so it won't get destroyed
+IFJ D > 0 NXT 10
+SUB D 1             # This The Iterator
+ADD C A             # So remember how multiplication was just many additions?
+JMP 6               # Loops back
+PVR A               # Pretty formatting
+PTX " x "           # Pretty formatting
+PVR B               # Pretty formatting
+PTX " = "           # Pretty formatting
+PVR C               # Pretty formatting
