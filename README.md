@@ -47,9 +47,9 @@ Will print the contents of the variable C.
 
 `PTX <text>` - Prints some text. (you have to use double `"` quotes, use `\"` to print a `"` symbol!) Example:
 ```instakod
-PTX "Text"!!!
+PTX "Text!!!"
 ```
-Will print the string "Text!!!"
+Will print the string `Text!!!`
 
 `NLN` - Goes to a new line.
 (you really don't need an example...)
