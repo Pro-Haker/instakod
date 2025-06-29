@@ -9,10 +9,9 @@ Go to the [Releases](https://github.com/Pro-Haker/instakod/releases) page and do
 
 # Interpreting/Running the code
 
-To run your InstaKod code, move `instakod.exe` and your code file to the same folder, then run:
-```sh
-.\instakod.exe <your file name>
-```
+To run your InstaKod code, move `instakod.exe` and your code file to the same folder, then, in the directory, run:
+In PowerShell: `./instakod.exe <your file name>`
+In Command Prompt: `instakod.exe <your file name>`
 
 # Examples
 
