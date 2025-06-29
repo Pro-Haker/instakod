@@ -45,7 +45,7 @@ PVR C
 ```
 Will print the contents of the variable C.
 
-`PTX <text>` - Prints some text. (you have to use double `"` quotes!) Example:
+`PTX <text>` - Prints some text. (you have to use double `"` quotes, use `\"` to print a `"` symbol!) Example:
 ```instakod
 PTX "Text"!!!
 ```
